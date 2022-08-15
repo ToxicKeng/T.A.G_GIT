@@ -175,7 +175,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 0f26cc1f8b336ab4ba6ae6287bbb3b2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -213,8 +213,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 64717760}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7, y: 1, z: -5}
-  m_LocalScale: {x: 3, y: 4, z: 3}
+  m_LocalPosition: {x: 1.87, y: 2, z: 6.39}
+  m_LocalScale: {x: 3, y: 3, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 321381474}
   - component: {fileID: 321381473}
   - component: {fileID: 321381472}
+  - component: {fileID: 321381475}
   m_Layer: 0
   m_Name: Player 2
   m_TagString: Untagged
@@ -362,7 +363,7 @@ BoxCollider:
   m_GameObject: {fileID: 321381465}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -373,7 +374,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 321381465}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4796460ea1d4fc34c8d23c79f98f495b, type: 3}
   m_Name: 
@@ -381,9 +382,9 @@ MonoBehaviour:
   move: 0
   ground:
     serializedVersion: 2
-    m_Bits: 0
-  PlayerContainer: {fileID: 266426756}
-  rb: {fileID: 0}
+    m_Bits: 8
+  PlayerContainer: {fileID: 321381466}
+  rb: {fileID: 321381474}
   lockPos: 0
 --- !u!54 &321381474
 Rigidbody:
@@ -401,6 +402,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &321381475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 321381465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4306250e34da3a4ebd82ca3ad9a625c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerContainer: {fileID: 321381466}
+  col: {fileID: 321381469}
+  LockPos: 0
+  keys: 11010000140100001201000014010000
 --- !u!1 &601345557
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +433,7 @@ GameObject:
   - component: {fileID: 601345564}
   - component: {fileID: 601345563}
   - component: {fileID: 601345565}
+  - component: {fileID: 601345566}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -527,7 +545,7 @@ BoxCollider:
   m_GameObject: {fileID: 601345557}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -538,7 +556,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601345557}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 50d6910439942f94584fe3590b17949a, type: 3}
   m_Name: 
@@ -547,9 +565,25 @@ MonoBehaviour:
   ground:
     serializedVersion: 2
     m_Bits: 0
-  PlayerContainer: {fileID: 1835150196}
+  PlayerContainer: {fileID: 601345562}
   rb: {fileID: 601345563}
   lockPos: 0
+--- !u!114 &601345566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601345557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4306250e34da3a4ebd82ca3ad9a625c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerContainer: {fileID: 1835150196}
+  col: {fileID: 601345559}
+  LockPos: 0
+  keys: 77000000610000007300000064000000
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +1000,7 @@ GameObject:
   - component: {fileID: 1484360400}
   - component: {fileID: 1484360399}
   - component: {fileID: 1484360398}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Arena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
