@@ -14,7 +14,7 @@ public class Roll2 : MonoBehaviour
 
     float lockpos = 0;
 
-    const float G = 667.4f;
+    const float G = 667.4f; 
 
 
     private void Start()
