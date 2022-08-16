@@ -417,7 +417,19 @@ MonoBehaviour:
   PlayerContainer: {fileID: 321381466}
   col: {fileID: 321381469}
   LockPos: 0
-  keys: 11010000140100001201000014010000
+  keys:
+  - keyCode: 0
+    direction: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+  - keyCode: 0
+    direction: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+  - keyCode: 0
+    direction: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
+  - keyCode: 0
+    direction: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
 --- !u!1 &601345557
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +546,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 32
   m_CollisionDetection: 0
 --- !u!65 &601345564
 BoxCollider:
@@ -545,7 +557,7 @@ BoxCollider:
   m_GameObject: {fileID: 601345557}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
@@ -583,7 +595,19 @@ MonoBehaviour:
   PlayerContainer: {fileID: 1835150196}
   col: {fileID: 601345559}
   LockPos: 0
-  keys: 77000000610000007300000064000000
+  keys:
+  - keyCode: 273
+    direction: {x: 0, y: 90, z: 1}
+    Rotation: {x: 0, y: 0, z: 0}
+  - keyCode: 274
+    direction: {x: 0, y: 0, z: -1}
+    Rotation: {x: 0, y: -90, z: 0}
+  - keyCode: 276
+    direction: {x: -1, y: 0, z: 0}
+    Rotation: {x: 0, y: 180, z: 0}
+  - keyCode: 275
+    direction: {x: 1, y: 0, z: 0}
+    Rotation: {x: 0, y: -180, z: 0}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

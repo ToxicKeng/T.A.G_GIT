@@ -10,7 +10,8 @@ public class Roll1 : MonoBehaviour
     [SerializeField] CapsuleCollider col;
     public float LockPos;
 
-    [SerializeField] KeyCode[] keys = new KeyCode[4];
+    public RollClass.Keys[] keys = new RollClass.Keys[4];
+
     // Start is called before the first frame update
     private void Start()
     {
