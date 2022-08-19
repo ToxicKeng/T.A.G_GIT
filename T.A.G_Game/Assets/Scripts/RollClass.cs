@@ -7,14 +7,20 @@ public class RollClass
     public Transform transform;
     public Rigidbody body;
 
-    public const float G = 667.4f;
+    public const float G = 9.81f;
 
-    public Keys[] keys = new Keys[4];
+    public Keys[] keys = new Keys[5];
+
+
     public float MoveSpeed = 5f;
+    public float JumpVelocity = 1500f;
 
     public float lockPos;
 
+    float velocity = 0;
+
     float distance;
+
     public RollClass(Transform transform, Rigidbody body, Keys[] keys, float distance, float lockPos)
     {
         this.keys = keys;
@@ -29,25 +35,49 @@ public class RollClass
         bool isGrounded = Physics.Raycast(transform.position, Vector3.down, distance, LayerMask.GetMask("Ground"));
         transform.rotation = Quaternion.Euler(lockPos, 180, lockPos);
         Vector3 direction = Vector3.zero;
-        /*Vector3 rotation = Quaternion.EulerAngles()*/
-        for(int i = 0; i < keys.Length; i++)
+
+        for (int i = 0; i < keys.Length; i++)
         {
-            Debug.Log(keys[i].keyCode);
             if (Input.GetKey(keys[i].keyCode))
             {
+                if (keys[i].direction.y > 0 && isGrounded)
+                {
+                    if (isGrounded)
+                    {
+                        body.AddForce(Vector3.up * JumpVelocity, ForceMode.Acceleration);
+                    }
+                    continue;
+                }
                 direction += keys[i].direction;
-                Debug.Log(direction);
                 body.rotation = Quaternion.Euler(keys[i].Rotation);
             }
         }
+        Vector3 rotaitonDirection = direction;
+        rotaitonDirection.y = 0;
+
+        if (!isGrounded)
+        {
+            velocity += Time.deltaTime * G;
+        } else
+        {
+            velocity = -0.02f;
+        }
+
+        //if(isJumping)
+        //{
+        //    body.AddForce((Vector3.up * JumpVelocity) * (JumpTime / TimeElapsed), ForceMode.Acceleration);
+        //    TimeElapsed += Time.deltaTime;
+        //}
+        //if(TimeElapsed >= JumpTime)
+        //{
+        //    isJumping = false;
+        //}
+
+        transform.rotation = Quaternion.LookRotation(rotaitonDirection);
         direction = direction.normalized * MoveSpeed;
+        direction.y = -velocity;
 
         body.velocity = direction;
-
-        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
-        {
-            body.velocity = new Vector3(0, 5f, 0).normalized * MoveSpeed;
-        }
     }
     [System.Serializable]
 
