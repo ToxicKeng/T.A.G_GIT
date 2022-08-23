@@ -44,6 +44,7 @@ public class RollClass
                 {
                     if (isGrounded)
                     {
+                        body.velocity = new Vector3(body.velocity.x, 0, body.velocity.z);
                         body.AddForce(Vector3.up * JumpVelocity, ForceMode.Acceleration);
                     }
                     continue;
@@ -62,16 +63,6 @@ public class RollClass
         {
             velocity = -0.02f;
         }
-
-        //if(isJumping)
-        //{
-        //    body.AddForce((Vector3.up * JumpVelocity) * (JumpTime / TimeElapsed), ForceMode.Acceleration);
-        //    TimeElapsed += Time.deltaTime;
-        //}
-        //if(TimeElapsed >= JumpTime)
-        //{
-        //    isJumping = false;
-        //}
 
         transform.rotation = Quaternion.LookRotation(rotaitonDirection);
         direction = direction.normalized * MoveSpeed;
