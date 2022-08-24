@@ -11,28 +11,31 @@ public class RollClass
 
     public Keys[] keys = new Keys[5];
 
+    public KeyCode Jump;
 
     public float MoveSpeed = 5f;
-    public float JumpVelocity = 1500f;
+    public float JumpVelocity = 20f;
 
     public float lockPos;
 
     float velocity = 0;
 
     float distance;
+    CapsuleCollider collider;
 
-    public RollClass(Transform transform, Rigidbody body, Keys[] keys, float distance, float lockPos)
+    public RollClass(Transform transform, Rigidbody body, Keys[] keys, float distance, KeyCode JumpKey)
     {
         this.keys = keys;
         this.transform = transform;
         this.body = body;
         this.distance = distance;
-        this.lockPos = lockPos;
+        this.Jump = JumpKey;
+        collider = transform.GetComponent<CapsuleCollider>();
     }
 
     public void Move()
     {
-        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, distance, LayerMask.GetMask("Ground"));
+        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.height + 0.2f, LayerMask.GetMask("Ground"));
         transform.rotation = Quaternion.Euler(lockPos, 180, lockPos);
         Vector3 direction = Vector3.zero;
 
@@ -40,15 +43,6 @@ public class RollClass
         {
             if (Input.GetKey(keys[i].keyCode))
             {
-                if (keys[i].direction.y > 0 && isGrounded)
-                {
-                    if (isGrounded)
-                    {
-                        body.velocity = new Vector3(body.velocity.x, 0, body.velocity.z);
-                        body.AddForce(Vector3.up * JumpVelocity, ForceMode.Acceleration);
-                    }
-                    continue;
-                }
                 direction += keys[i].direction;
                 body.rotation = Quaternion.Euler(keys[i].Rotation);
             }
@@ -56,15 +50,26 @@ public class RollClass
         Vector3 rotaitonDirection = direction;
         rotaitonDirection.y = 0;
 
-        if (!isGrounded)
+        if (isGrounded)
         {
             velocity += Time.deltaTime * G;
         } else
         {
-            velocity = -0.02f;
+            velocity = 0.2f;
         }
 
-        transform.rotation = Quaternion.LookRotation(rotaitonDirection);
+        if (Input.GetKeyDown(Jump) && isGrounded)
+        {
+            Vector3 vel = body.velocity;
+            body.velocity = new Vector3(vel.x, 0, vel.z);
+            velocity += -JumpVelocity;
+        }
+
+        if(rotaitonDirection.magnitude != 0)
+        {
+            transform.rotation = Quaternion.LookRotation(rotaitonDirection);
+        }
+
         direction = direction.normalized * MoveSpeed;
         direction.y = -velocity;
 

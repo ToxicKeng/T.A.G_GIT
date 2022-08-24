@@ -9,6 +9,7 @@ public class Roll1 : MonoBehaviour
     private Rigidbody rb;
     [SerializeField] CapsuleCollider col;
     public float LockPos;
+    public KeyCode Jump;
 
     public RollClass.Keys[] keys = new RollClass.Keys[4];
 
@@ -16,8 +17,8 @@ public class Roll1 : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        float distance = GetComponent<CapsuleCollider>().height / 2 + 0.1f;
-        rollData = new RollClass(PlayerContainer, rb, keys, distance, LockPos);
+        float distance = GetComponent<CapsuleCollider>().height / 2 + 0.3f;
+        rollData = new RollClass(PlayerContainer, rb, keys, distance, Jump);
     }
 
     // Update is called once per frame
