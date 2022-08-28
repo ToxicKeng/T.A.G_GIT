@@ -297,7 +297,6 @@ GameObject:
   - component: {fileID: 321381470}
   - component: {fileID: 321381469}
   - component: {fileID: 321381474}
-  - component: {fileID: 321381473}
   - component: {fileID: 321381472}
   - component: {fileID: 321381475}
   m_Layer: 0
@@ -400,25 +399,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &321381473
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 321381465}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4796460ea1d4fc34c8d23c79f98f495b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: 0
-  ground:
-    serializedVersion: 2
-    m_Bits: 8
-  PlayerContainer: {fileID: 321381466}
-  rb: {fileID: 321381474}
-  lockPos: 0
 --- !u!54 &321381474
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -454,7 +434,7 @@ MonoBehaviour:
   keys:
   - keyCode: 273
     direction: {x: 0, y: 0, z: 1}
-    Rotation: {x: 0, y: 90, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
   - keyCode: 276
     direction: {x: -1, y: 0, z: 0}
     Rotation: {x: 0, y: 0, z: 0}
@@ -1238,7 +1218,6 @@ GameObject:
   - component: {fileID: 1898177851}
   - component: {fileID: 1898177850}
   - component: {fileID: 1898177849}
-  - component: {fileID: 1898177848}
   - component: {fileID: 1898177847}
   - component: {fileID: 1898177846}
   m_Layer: 0
@@ -1283,16 +1262,19 @@ MonoBehaviour:
   keys:
   - keyCode: 119
     direction: {x: 0, y: 0, z: 1}
-    Rotation: {x: 0, y: 90, z: 0}
+    Rotation: {x: 0, y: 180, z: 0}
   - keyCode: 97
     direction: {x: -1, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0}
+    Rotation: {x: 0, y: 90, z: 0}
   - keyCode: 115
     direction: {x: 0, y: 0, z: -1}
-    Rotation: {x: 0, y: -90, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
   - keyCode: 100
     direction: {x: 1, y: 0, z: 0}
-    Rotation: {x: 0, y: 180, z: 0}
+    Rotation: {x: 0, y: 270, z: 0}
+  - keyCode: 9
+    direction: {x: 0, y: 1, z: 0}
+    Rotation: {x: 0, y: 0, z: 0}
 --- !u!65 &1898177847
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1306,25 +1288,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &1898177848
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898177844}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4796460ea1d4fc34c8d23c79f98f495b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  move: 0
-  ground:
-    serializedVersion: 2
-    m_Bits: 8
-  PlayerContainer: {fileID: 1898177845}
-  rb: {fileID: 1898177849}
-  lockPos: 0
 --- !u!54 &1898177849
 Rigidbody:
   m_ObjectHideFlags: 0
