@@ -55,7 +55,7 @@ public class RollClass
             velocity += Time.deltaTime * G;
         } else
         {
-            velocity = 0.2f;
+            velocity = 9.81f;
         }
 
         if (Input.GetKeyDown(Jump) && isGrounded)
