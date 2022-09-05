@@ -20,6 +20,7 @@ public class RollClass
 
     float velocity = 0;
     float velocityJump;
+    public bool isGrounded = false;
 
     float distance;
     CapsuleCollider collider;
@@ -36,7 +37,7 @@ public class RollClass
 
     public void Move()
     {
-        bool isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.height + 0.2f, LayerMask.GetMask("Ground"));
+        isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.height, LayerMask.GetMask("Ground"));
         transform.rotation = Quaternion.Euler(lockPos, 180, lockPos);
         Vector3 direction = Vector3.zero;
 
@@ -53,21 +54,22 @@ public class RollClass
 
         if (isGrounded)
         {
-            velocity = -0.2f;
-        } else
+            velocity = 5f;
+        }
+        else
         {
             velocity += Time.deltaTime * G;
         }
-        if (Input.GetKeyDown(Jump) && isGrounded)
+        if (Input.GetKeyDown(Jump) && isGrounded )
         {
             velocityJump = JumpVelocity;
-            Debug.Log("b");
-
+            //body.AddForce(Vector3.up * JumpVelocity * 10, ForceMode.Impulse);
+            
         }
-        transform.Translate(new Vector3(0, velocityJump, 0) * Time.deltaTime);
+            //transform.Translate(new Vector3(0, velocityJump, 0) * Time.deltaTime);
 
 
-        if(rotaitonDirection.magnitude != 0)
+        if (rotaitonDirection.magnitude != 0)
         {
             transform.rotation = Quaternion.LookRotation(rotaitonDirection);
         }
