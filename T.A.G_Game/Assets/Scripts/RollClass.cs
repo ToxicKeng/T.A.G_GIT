@@ -14,11 +14,12 @@ public class RollClass
     public KeyCode Jump;
 
     public float MoveSpeed = 5f;
-    public float JumpVelocity = 20f;
+    public float JumpVelocity = 10;
 
     public float lockPos;
 
     float velocity = 0;
+    float velocityJump;
 
     float distance;
     CapsuleCollider collider;
@@ -52,18 +53,19 @@ public class RollClass
 
         if (isGrounded)
         {
-            velocity += Time.deltaTime * G;
+            velocity = -0.2f;
         } else
         {
-            velocity = 0.2f;
+            velocity += Time.deltaTime * G;
         }
-
         if (Input.GetKeyDown(Jump) && isGrounded)
         {
-            Vector3 vel = body.velocity;
-            body.velocity = new Vector3(vel.x, 0, vel.z);
-            velocity += -JumpVelocity;
+            velocityJump = JumpVelocity;
+            Debug.Log("b");
+
         }
+        transform.Translate(new Vector3(0, velocityJump, 0) * Time.deltaTime);
+
 
         if(rotaitonDirection.magnitude != 0)
         {
