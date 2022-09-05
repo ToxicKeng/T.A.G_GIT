@@ -52,18 +52,24 @@ public class RollClass
 
         if (isGrounded)
         {
-            velocity += Time.deltaTime * G;
+            velocity = -0.2f;
         } else
         {
-            velocity = 9.81f;
+            velocity += Time.deltaTime * G;
         }
 
         if (Input.GetKeyDown(Jump) && isGrounded)
         {
-            Vector3 vel = body.velocity;
+            /* Vector3 vel = body.velocity;
             body.velocity = new Vector3(vel.x, 0, vel.z);
-            velocity += -JumpVelocity;
+            velocity += -JumpVelocity; */
+            //body.velocity += new Vector3(0,3,0);
+            body.velocity = Vector3.zero;
+            body.AddForce(Vector3.up* 3000);
+            Debug.Log("b");
+
         }
+
 
         if(rotaitonDirection.magnitude != 0)
         {
