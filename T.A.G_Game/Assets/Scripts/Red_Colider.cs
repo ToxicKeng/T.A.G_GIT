@@ -7,7 +7,7 @@ public class Red_Colider : MonoBehaviour
 {
     public float RadNum = 0f;
 
-    public Text scoreText;
+    public TMPro scoreText;
     public float scoreAmount;
     public float pointIncreasedPerSecond;
 
