@@ -1,14 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.ScemeManagement;
+using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
-
-    public string startGame = "Game";
-  public void StartGame()
+    public void LoadGame()
     {
-        SceneManager.LoadScene(startGame);
+        SceneManager.LoadScene("Game");
+    }
+    public void LoadSettings()
+    {
+        SceneManager.LoadScene("HowToPlay");
+    }
+    public void LoadQuit()
+    {
+        Debug.Log("Quit");
     }
 }
