@@ -60,12 +60,12 @@ public class RollClass
         {
             velocity += Time.deltaTime * G;
         }
-        if (Input.GetKeyDown(Jump) && isGrounded )
+       /* if (Input.GetKeyDown(Jump) && isGrounded )
         {
             velocityJump = JumpVelocity;
             //body.AddForce(Vector3.up * JumpVelocity * 10, ForceMode.Impulse);
             
-        }
+        }*/
             //transform.Translate(new Vector3(0, velocityJump, 0) * Time.deltaTime);
 
 
