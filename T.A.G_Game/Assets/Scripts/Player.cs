@@ -6,14 +6,6 @@ public class Player : MonoBehaviour
 {
     // Start is called before the first frame update
 
-
-    PlayerClass player;
-    private void Awake()
-    {
-        GameObject[] players = GameObject.FindGameObjectsWithTag("Player");
-        player = new PlayerClass(false);
-    }
-
     void Start()
     {
         
@@ -27,9 +19,11 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject)
+        if (collision.gameObject.tag == "Tagged")
         {
-            Debug.Log(collision.gameObject.tag);
+            transform.tag = "Tagged";
+            collision.gameObject.tag = "Player";
+            Debug.Log("Game ended");
         }
     }
 }

@@ -6,7 +6,7 @@ TagManager:
   tags:
   - HitBlue
   - HitRed
-  - Tagger
+  - Tagged
   layers:
   - Default
   - TransparentFX

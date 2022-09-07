@@ -74,7 +74,7 @@ public class RollClass
             transform.rotation = Quaternion.LookRotation(rotaitonDirection);
         }
 
-        direction = direction.normalized * MoveSpeed;
+        direction = direction.normalized * MoveSpeed * 2;
         direction.y = -velocity;
 
         body.velocity = direction;
