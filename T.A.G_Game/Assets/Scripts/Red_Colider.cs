@@ -7,22 +7,45 @@ public class Red_Colider : MonoBehaviour
 {
     public float RadNum = 0f;
 
-    public TMPro scoreText;
+
     public float scoreAmount;
     public float pointIncreasedPerSecond;
+    public TMPro.TextMeshProUGUI scoreText;
+
+    bool GameOver = false;
+
+    Player RedPlayer;
+    Player BluePlayer;
 
     void Start()
     {
         RNG();
         scoreAmount = 0f;
         pointIncreasedPerSecond = 10f;
-    }
-    
-     void Update()
-    {
-        scoreText.text = (int)scoreAmount + "";
-        scoreAmount += pointIncreasedPerSecond * Time.deltaTime;
 
+        bool isRunning = (Random.Range(0, 1) == 1) ? true : false;
+
+        RedPlayer = new Player("HitRed", isRunning);
+        BluePlayer = new Player("HitBlue", !isRunning);
+    }
+
+    void Update()
+    {
+        if(!GameOver)
+        {
+            scoreText.text = (int)scoreAmount + "";
+            scoreAmount += pointIncreasedPerSecond * Time.deltaTime;
+        }
+
+    }
+
+    private void BluePlayerF()
+    {
+        RNG();
+    }
+
+    private void RedPlayerF()
+    {
 
     }
 
@@ -39,7 +62,7 @@ public class Red_Colider : MonoBehaviour
         {
             Runner();
         }
-       
+
     }
 
     private void Chaser()
@@ -49,14 +72,30 @@ public class Red_Colider : MonoBehaviour
     private void Runner()
     {
 
+
     }
 
 
     private void OnCollisionEnter(Collision collision)
     {
-            if (collision.gameObject.tag == "HitBlue")
-            {
-                Debug.Log("Taged Red");
-            }
+        if (collision.gameObject.tag == "HitBlue")
+        {
+            Debug.Log("Taged Red");
+            BluePlayer.isRunning = false;
+            GameOver = false;
+        }
+
+    }
+
+    class Player
+    {
+        public bool isRunning;
+        public string TagName;
+        public Player(string tag, bool isRunning)
+        {
+            TagName = tag;
+            this.isRunning = isRunning;
         }
     }
+}
+
