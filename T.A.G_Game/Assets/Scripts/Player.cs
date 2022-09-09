@@ -19,10 +19,10 @@ public class Player : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.tag == "Tagged")
+        if (collision.gameObject.tag == "Player")
         {
-            transform.tag = "Tagged";
-            collision.gameObject.tag = "Player";
+            transform.tag = "Player";
+            collision.gameObject.tag = "Tagged";
             Debug.Log("Game ended");
         }
     }

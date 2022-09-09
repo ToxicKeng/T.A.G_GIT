@@ -24,6 +24,7 @@ public class GameManager : MonoBehaviour
         playerTagged.tag = "Tagged";
 
         role.text = "Tagger is: " + playerTagged.name;
+        playerTagged.AddComponent<Player>();
     }
 
     private void Update()
