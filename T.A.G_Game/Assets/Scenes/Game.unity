@@ -123,6 +123,7 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< HEAD
 --- !u!1 &57817253
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,6 +271,9 @@ AudioSource:
     m_PostInfinity: 2
     m_RotationOrder: 4
 --- !u!1 &217913721
+=======
+--- !u!1 &64717760
+>>>>>>> parent of 41a25ed (AddedMusic)
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1283,8 +1287,11 @@ RectTransform:
   m_Children:
   - {fileID: 848312207}
   - {fileID: 1911825510}
+<<<<<<< HEAD
   - {fileID: 57817254}
   - {fileID: 678008103}
+=======
+>>>>>>> parent of 41a25ed (AddedMusic)
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
