@@ -19,7 +19,11 @@ MonoBehaviour:
     width: 1206
     height: 715
   m_ShowMode: 4
+<<<<<<< HEAD
   m_Title:
+=======
+  m_Title: Game
+>>>>>>> parent of 6b80d6b (FixingUI)
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +52,11 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
+<<<<<<< HEAD
   controlID: 119
+=======
+  controlID: 18
+>>>>>>> parent of 6b80d6b (FixingUI)
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -66,11 +74,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 921
     y: 0
+<<<<<<< HEAD
     width: 285
     height: 665
   m_MinSize: {x: 276, y: 71}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 13}
+=======
+    width: 454
+    height: 947
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 15}
+>>>>>>> parent of 6b80d6b (FixingUI)
   m_Panes:
   - {fileID: 13}
   m_Selected: 0
@@ -92,11 +108,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
     width: 228
     height: 394
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 14}
+=======
+    width: 362
+    height: 561
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 16}
+>>>>>>> parent of 6b80d6b (FixingUI)
   m_Panes:
   - {fileID: 14}
   m_Selected: 0
@@ -220,7 +244,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
+<<<<<<< HEAD
   controlID: 92
+=======
+  controlID: 89
+>>>>>>> parent of 6b80d6b (FixingUI)
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -245,7 +273,11 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
+<<<<<<< HEAD
   controlID: 93
+=======
+  controlID: 90
+>>>>>>> parent of 6b80d6b (FixingUI)
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -263,11 +295,19 @@ MonoBehaviour:
     serializedVersion: 2
     x: 228
     y: 0
+<<<<<<< HEAD
     width: 693
     height: 394
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 15}
+=======
+    width: 1104
+    height: 561
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
+>>>>>>> parent of 6b80d6b (FixingUI)
   m_Panes:
   - {fileID: 15}
   - {fileID: 16}
@@ -281,6 +321,138 @@ MonoBehaviour:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
+<<<<<<< HEAD
+=======
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: -1673928668082335149, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 634
+    width: 1465
+    height: 365
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: -6447895953914172684, guid: 1cd4e6fed09b9154ba47835eecfc082f, type: 2}
+    - {fileID: -571258352464923743, guid: d868307b16911ee46a132c3bd3bd15d1, type: 2}
+    - {fileID: 2274015878757252060, guid: 1969b240d10257a44b8f65e85cbd6538, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 30
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 0.9548387
+      e01: 0
+      e02: 0
+      e03: -8.290314
+      e10: 0
+      e11: 0.9548387
+      e12: 0
+      e13: 28.645233
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: 1969b240d10257a44b8f65e85cbd6538, type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 2274015878757252060, guid: 1969b240d10257a44b8f65e85cbd6538, type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 0
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -8166618308981325432, guid: 0000000000000000d000000000000000, type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 634
+    width: 1465
+    height: 365
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 24812
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+>>>>>>> parent of 6b80d6b (FixingUI)
   m_EditorHideFlags: 1
   m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name:
@@ -323,9 +495,15 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
     m_SelectedIDs: f4350000
     m_LastClickedID: 13812
     m_ExpandedIDs: 00000000f435000000ca9a3b
+=======
+    m_SelectedIDs: b05b0000
+    m_LastClickedID: 23472
+    m_ExpandedIDs: 00000000ac5b0000ae5b0000b05b000000ca9a3b
+>>>>>>> parent of 6b80d6b (FixingUI)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name:
@@ -353,7 +531,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs:
     m_LastClickedID: 0
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000f4350000
+=======
+    m_ExpandedIDs: 00000000ac5b0000ae5b0000b05b0000
+>>>>>>> parent of 6b80d6b (FixingUI)
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name:
@@ -475,9 +657,15 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD
       m_SelectedIDs:
       m_LastClickedID: 0
       m_ExpandedIDs: 42fbffff
+=======
+      m_SelectedIDs: f85a0000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 52f4ffff18f5ffff36fbffff545a0000085e0000
+>>>>>>> parent of 6b80d6b (FixingUI)
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name:
@@ -537,9 +725,15 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
+=======
+    m_Target: {x: 301.79047, y: 545.1034, z: 1154.7721}
+    speed: 2
+    m_Value: {x: 301.79047, y: 545.1034, z: 1154.7721}
+>>>>>>> parent of 6b80d6b (FixingUI)
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -585,6 +779,7 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
+<<<<<<< HEAD
     m_Target: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
@@ -592,6 +787,15 @@ MonoBehaviour:
     m_Target: 10
     speed: 2
     m_Value: 10
+=======
+    m_Target: {x: -0.098521456, y: 0.013429446, z: 0.0013296108, w: 0.9950454}
+    speed: 2
+    m_Value: {x: -0.098521255, y: 0.013429419, z: 0.0013296081, w: 0.9950434}
+  m_Size:
+    m_Target: 860.2895
+    speed: 2
+    m_Value: 860.2895
+>>>>>>> parent of 6b80d6b (FixingUI)
   m_Ortho:
     m_Target: 0
     speed: 2
