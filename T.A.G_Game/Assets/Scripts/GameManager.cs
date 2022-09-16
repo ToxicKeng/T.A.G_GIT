@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public float scoreAmount;
     public float pointIncreasedPerSecond;
     public TMPro.TextMeshProUGUI scoreText;
+    public TMPro.TextMeshProUGUI scoreTextEnd;
     public TMPro.TextMeshProUGUI role;
 
          
@@ -36,6 +37,7 @@ public class GameManager : MonoBehaviour
 
         if(!GameOver){
             scoreText.text = (int)scoreAmount + "";
+            scoreTextEnd.text = (int)scoreAmount + "";
             scoreAmount += pointIncreasedPerSecond * Time.deltaTime;
 
             //game stopped here

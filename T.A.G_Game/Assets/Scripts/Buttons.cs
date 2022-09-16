@@ -5,16 +5,15 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+   
+   
     public void LoadGame()
     {
         SceneManager.LoadScene("Game");
     }
-    public void LoadSettings()
+    public void LoadUI()
     {
-        SceneManager.LoadScene("HowToPlay");
+        SceneManager.LoadScene("UI");
     }
-    public void LoadQuit()
-    {
-        Debug.Log("Quit");
-    }
+   
 }
