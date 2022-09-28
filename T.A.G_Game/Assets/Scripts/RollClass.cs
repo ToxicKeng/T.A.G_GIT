@@ -7,7 +7,7 @@ public class RollClass
     public Transform transform;
     public Rigidbody body;
 
-    public const float G = 9.81f;
+    public const float G = 5.3f;
 
     public Keys[] keys = new Keys[5];
 
@@ -58,7 +58,7 @@ public class RollClass
         }
         else
         {
-            velocity += Time.deltaTime * G;
+            velocity += 0/*Time.deltaTime * G*/;
         }
        /* if (Input.GetKeyDown(Jump) && isGrounded )
         {
@@ -74,7 +74,7 @@ public class RollClass
             transform.rotation = Quaternion.LookRotation(rotaitonDirection);
         }
 
-        direction = direction.normalized * MoveSpeed * 2 * Random.Range(0.1f, 1f);
+        direction = direction.normalized * MoveSpeed * 2 * Random.Range(0.1f, 2f);
         direction.y = -velocity;
 
         body.velocity = direction;
