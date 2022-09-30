@@ -7,6 +7,9 @@ TagManager:
   - HitBlue
   - HitRed
   - Tagged
+  - Powerup
+  - GroundTag
+  - Shielded_Player
   layers:
   - Default
   - TransparentFX

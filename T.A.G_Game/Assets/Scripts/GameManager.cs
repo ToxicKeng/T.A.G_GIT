@@ -12,8 +12,8 @@ public class GameManager : MonoBehaviour
     public TMPro.TextMeshProUGUI scoreText;
     public TMPro.TextMeshProUGUI scoreTextEnd;
     public TMPro.TextMeshProUGUI role;
-
-         
+    public GameObject GameEndUI;
+    
     bool GameOver = false;
 
     GameObject playerTagged;
@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
 
         role.text = "Tagger is: " + playerTagged.name;
         playerTagged.AddComponent<Player>();
+        playerTagged.GetComponent<Player>().GameEndUI = GameEndUI;
+
     }
 
     private void Update()

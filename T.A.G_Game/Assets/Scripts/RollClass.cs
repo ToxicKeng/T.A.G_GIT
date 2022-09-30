@@ -1,5 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
+using System.Runtime.InteropServices.WindowsRuntime;
+using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
 public class RollClass
@@ -19,25 +22,17 @@ public class RollClass
     public float lockPos;
 
     float velocity = 0;
-    float velocityJump;
-    public bool isGrounded = false;
 
-    float distance;
-    CapsuleCollider collider;
-
-    public RollClass(Transform transform, Rigidbody body, Keys[] keys, float distance, KeyCode JumpKey)
+    public RollClass(Transform transform, Rigidbody body, Keys[] keys, KeyCode JumpKey)
     {
         this.keys = keys;
         this.transform = transform;
         this.body = body;
-        this.distance = distance;
         this.Jump = JumpKey;
-        collider = transform.GetComponent<CapsuleCollider>();
     }
 
     public void Move()
     {
-        isGrounded = Physics.Raycast(transform.position, Vector3.down, collider.height, LayerMask.GetMask("Ground"));
         transform.rotation = Quaternion.Euler(lockPos, 180, lockPos);
         Vector3 direction = Vector3.zero;
 
@@ -52,33 +47,18 @@ public class RollClass
         Vector3 rotaitonDirection = direction;
         rotaitonDirection.y = 0;
 
-        if (isGrounded)
-        {
-            velocity = 5f;
-        }
-        else
-        {
-            velocity += 0/*Time.deltaTime * G*/;
-        }
-       /* if (Input.GetKeyDown(Jump) && isGrounded )
-        {
-            velocityJump = JumpVelocity;
-            //body.AddForce(Vector3.up * JumpVelocity * 10, ForceMode.Impulse);
-            
-        }*/
-            //transform.Translate(new Vector3(0, velocityJump, 0) * Time.deltaTime);
-
-
         if (rotaitonDirection.magnitude != 0)
         {
             transform.rotation = Quaternion.LookRotation(rotaitonDirection);
         }
 
-        direction = direction.normalized * MoveSpeed * 2 * Random.Range(0.1f, 2f);
+        direction = direction.normalized * MoveSpeed * 2;
         direction.y = -velocity;
 
         body.velocity = direction;
     }
+
+
     [System.Serializable]
 
     public struct Keys
