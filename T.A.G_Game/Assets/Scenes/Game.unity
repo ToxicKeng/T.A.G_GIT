@@ -1678,7 +1678,7 @@ GameObject:
   - component: {fileID: 335387435}
   - component: {fileID: 335387434}
   m_Layer: 5
-  m_Name: RedButton
+  m_Name: JungleButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2422,7 +2422,7 @@ GameObject:
   - component: {fileID: 732431738}
   - component: {fileID: 732431737}
   m_Layer: 5
-  m_Name: BlueText
+  m_Name: OceanText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2469,7 +2469,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: blue
+  m_text: Ocean
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad1f4c391daeb164abcda5dbbe98815a, type: 2}
   m_sharedMaterial: {fileID: 176230598901798875, guid: ad1f4c391daeb164abcda5dbbe98815a, type: 2}
@@ -2560,7 +2560,7 @@ GameObject:
   - component: {fileID: 735186982}
   - component: {fileID: 735186981}
   m_Layer: 5
-  m_Name: BlackButton
+  m_Name: SpaceButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2811,7 +2811,7 @@ GameObject:
   - component: {fileID: 769027668}
   - component: {fileID: 769027667}
   m_Layer: 5
-  m_Name: RedText
+  m_Name: JungleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2858,7 +2858,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: red
+  m_text: Jungle
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad1f4c391daeb164abcda5dbbe98815a, type: 2}
   m_sharedMaterial: {fileID: 176230598901798875, guid: ad1f4c391daeb164abcda5dbbe98815a, type: 2}
@@ -4440,7 +4440,7 @@ GameObject:
   - component: {fileID: 1061110986}
   - component: {fileID: 1061110985}
   m_Layer: 5
-  m_Name: BlackText
+  m_Name: SpaceText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4460,7 +4460,7 @@ RectTransform:
   m_Children:
   - {fileID: 735186980}
   m_Father: {fileID: 1440641723}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4579,7 +4579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1062063696
 Transform:
   m_ObjectHideFlags: 0
@@ -5299,7 +5299,7 @@ GameObject:
   - component: {fileID: 1416884237}
   - component: {fileID: 1416884236}
   m_Layer: 5
-  m_Name: BlueButton
+  m_Name: OceanButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5473,8 +5473,8 @@ RectTransform:
   - {fileID: 890393270}
   - {fileID: 732431736}
   - {fileID: 769027666}
-  - {fileID: 1841935046}
   - {fileID: 1061110984}
+  - {fileID: 1841935046}
   m_Father: {fileID: 919083785}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5807,7 +5807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1566451667
 Transform:
   m_ObjectHideFlags: 0
@@ -6468,7 +6468,7 @@ RectTransform:
   m_Children:
   - {fileID: 210125413}
   m_Father: {fileID: 1440641723}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
