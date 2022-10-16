@@ -31,6 +31,7 @@ public class Shield : MonoBehaviour
         }
         if (5 < timeAlive && active == false) {
             Destroy(gameObject);
+            
         }
         timeAlive += Time.deltaTime;
     }

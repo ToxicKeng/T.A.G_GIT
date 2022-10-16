@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+//code for the pause menu
 public class Pause : MonoBehaviour
 {
     public static bool GamePaused = false;

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//This script allows the player to use power ups
 public class Powerups: MonoBehaviour {
     public GameObject[] powerups;
     GameObject[] Arena;

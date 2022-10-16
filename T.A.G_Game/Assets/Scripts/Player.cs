@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+//This code is used for the tag feature. There is also code for the end game menu
 
 public class Player : MonoBehaviour
 {

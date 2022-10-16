@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-
+//code used for tag detection
 public class GameManager : MonoBehaviour
 {
     public GameObject[] players;

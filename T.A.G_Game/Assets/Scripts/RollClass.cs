@@ -5,6 +5,7 @@ using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting.FullSerializer;
 using UnityEngine;
 
+//This helps with the jumping. This is done by using a class
 public class RollClass
 {
     public Transform transform;

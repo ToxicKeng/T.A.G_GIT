@@ -936,7 +936,7 @@ RectTransform:
   m_GameObject: {fileID: 208430312}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.72661215, y: 0.7992734, z: 0.72661215}
+  m_LocalScale: {x: 1, y: 1, z: 0.72661215}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 362995833}
@@ -1276,7 +1276,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: fd275ac4a59e57f4d943637f972839fb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b267789dd660c9e40b08b98530057b86, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1877,7 +1877,7 @@ GameObject:
   - component: {fileID: 426740966}
   - component: {fileID: 426740965}
   m_Layer: 0
-  m_Name: Red
+  m_Name: Hippo
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4013,7 +4013,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 978091434}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: -0.07093716, y: 3, z: 8.57}
+  m_LocalPosition: {x: -0.07093716, y: 2.9, z: 8.57}
   m_LocalScale: {x: 1.5, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4487,7 +4487,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Black
+  m_text: Space
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ad1f4c391daeb164abcda5dbbe98815a, type: 2}
   m_sharedMaterial: {fileID: 176230598901798875, guid: ad1f4c391daeb164abcda5dbbe98815a, type: 2}
@@ -4574,7 +4574,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1062063696}
   m_Layer: 0
-  m_Name: Walls(Black)
+  m_Name: SpaceWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4665,7 +4665,7 @@ RectTransform:
   m_GameObject: {fileID: 1139485113}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.72661215, y: 0.7992734, z: 0.72661215}
+  m_LocalScale: {x: 1, y: 1, z: 0.72661215}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1923201673}
@@ -4772,7 +4772,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c639b21af66b015488a2af2fd1e0a041, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6673399752c06054cac2981f3098eae2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5422,8 +5422,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: b267789dd660c9e40b08b98530057b86, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -5455,7 +5455,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1440641723
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5541,7 +5541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1e57e5261274ccb43b72ad6f15d6524b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d64d75c9727b944a9b6b5f7a03371d1, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5802,7 +5802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1566451667}
   m_Layer: 0
-  m_Name: Walls(Red)
+  m_Name: ForestWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6285,7 +6285,6 @@ MonoBehaviour:
   powerups:
   - {fileID: 660863394979350854, guid: 036981b04ac50714797fc29b33f8aca8, type: 3}
   - {fileID: 6917313292477953597, guid: b8fdfda0562965045b2c77b6a92ac897, type: 3}
-  - {fileID: 6917313292477953597, guid: 34e8516f0789f9845ac2428581c69bf9, type: 3}
 --- !u!4 &1745497035
 Transform:
   m_ObjectHideFlags: 0
@@ -6472,7 +6471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -198.4, y: -152.6}
+  m_AnchoredPosition: {x: -198.4, y: -200}
   m_SizeDelta: {x: 456.8748, y: 61.56}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1841935047
@@ -6680,7 +6679,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845129807}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: -0.07093716, y: 3, z: 8.57}
+  m_LocalPosition: {x: -0.07093716, y: 2.9, z: 8.57}
   m_LocalScale: {x: 1.5, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6837,7 +6836,7 @@ GameObject:
   - component: {fileID: 1898177849}
   - component: {fileID: 1898177846}
   m_Layer: 0
-  m_Name: Blue
+  m_Name: Whale
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6999,7 +6998,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1907874052}
   m_LocalRotation: {x: 0.5, y: 0.5, z: -0.5, w: -0.5}
-  m_LocalPosition: {x: -0.07093716, y: 3, z: 8.57}
+  m_LocalPosition: {x: -0.07093716, y: 2.9, z: 8.57}
   m_LocalScale: {x: 1.5, y: 1, z: 3}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7137,8 +7136,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 838860800
-  m_fontColor: {r: 0, g: 0, b: 0, a: 0.19607843}
+    rgba: 855638015
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.19607843}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -7475,7 +7474,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2001471848}
   m_Layer: 0
-  m_Name: Walls(Blue)
+  m_Name: OceanWalls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

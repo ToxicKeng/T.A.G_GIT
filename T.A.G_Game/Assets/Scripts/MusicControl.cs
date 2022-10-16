@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//code used for the music
 public class MusicControl : MonoBehaviour
 {
     public static MusicControl instance; 

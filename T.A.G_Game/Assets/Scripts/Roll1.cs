@@ -4,6 +4,7 @@ using System.Security.Cryptography;
 using Unity.VisualScripting;
 using UnityEngine;
 
+//movement and gravity and calculated in this script
 public class Roll1 : MonoBehaviour
 {
     RollClass rollData;
