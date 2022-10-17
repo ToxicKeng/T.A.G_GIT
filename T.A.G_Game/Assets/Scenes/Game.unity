@@ -1898,7 +1898,7 @@ MonoBehaviour:
   PlayerContainer: {fileID: 426740970}
   col: {fileID: 426740967}
   LockPos: 0
-  Jump: 109
+  Jump: 303
   JumpMultiplier: 1
   keys:
   - keyCode: 273

@@ -50,8 +50,11 @@ public class Shield : MonoBehaviour
             shieldSphere.GetComponent<Renderer>().material = ShieldMaterial;
             Destroy(shieldSphere.GetComponent<SphereCollider>());
             Destroy(shieldSphere.GetComponent<BoxCollider>());
-            PrevTag = Player.tag;
-            Player.tag = "Shielded_Player";
+            if(Player.tag != "Shielded_Player")
+            {
+                PrevTag = Player.tag;
+                Player.tag = "Shielded_Player";
+            }
         }
     }
 }
